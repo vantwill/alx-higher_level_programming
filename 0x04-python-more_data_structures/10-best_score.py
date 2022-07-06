@@ -7,7 +7,7 @@ def best_score(a_dictionary):
     ret = list(a_dictionary.keys())[0]
     big = a_dictionary[ret]
     for t, g in a_dictionary.items():
-        if v > big:
+        if g > big:
             big = g
             ret = t
     return (ret)
