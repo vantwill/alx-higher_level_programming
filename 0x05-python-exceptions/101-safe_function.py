@@ -1,13 +1,18 @@
 #!/usr/bin/python3
 # 101-safe_function.py
 # tewolde
+
 import sys
+
+
 def safe_function(fct, *args):
     """Executes a function safely.
-    Args:
+
+Args:
         fct: The function to execute.
         args: Arguments for fct.
-    Returns:
+
+Returns:
         If an error occurs - None.
         Otherwise - the result of the call to fct.
     """
