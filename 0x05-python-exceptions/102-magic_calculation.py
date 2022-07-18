@@ -1,5 +1,6 @@
 #!/usr/bin/python3
-# 102-magic_calculation.py
+# 102-magic_calculation.p
+# tewolde
 def magic_calculation(a, b):
     result = 0
     for t in range(1, 3):
