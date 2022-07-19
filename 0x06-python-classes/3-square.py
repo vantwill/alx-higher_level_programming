@@ -2,7 +2,6 @@
 "1-square.py define"
 
 
-
 class Square:
     """Class Square
     """
