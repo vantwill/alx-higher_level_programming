@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 # 2-rectangle.py
-# Tewolde g
+# Tewolde
 """Defines a Rectangle class."""
 
 
