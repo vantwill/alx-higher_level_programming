@@ -3,7 +3,7 @@
 # Tewolde
 """Defines a Rectangle class."""
 
+
 class Rectangle:
     """Represent a rectangel."""
     pass
-
