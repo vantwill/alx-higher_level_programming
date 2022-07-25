@@ -1,8 +1,9 @@
 #!/usr/bin/python3
 # 0-rectangle.py
 # Tewolde
+"""Define a Rectangle class."""
 
 
 class Rectangle:
-    """Define a Rectangle class."""
+    """Represent a rectangle."""
     pass
