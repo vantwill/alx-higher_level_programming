@@ -1,5 +1,5 @@
 #!/usr/bin/node
-// my first nod code
+// Print string "Javascript is amazing"
 
 const myVar = 'Javascript is amazing';
 console.log(myVar);
