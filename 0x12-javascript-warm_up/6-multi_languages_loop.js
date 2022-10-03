@@ -4,6 +4,6 @@
 
 const langs = ['C is fun', 'Python is cool', 'JavaScript is amazing'];
 
-for (let t = 0; t < 3; t++) {
+for (let i = 0; i < 3; i++) {
   console.log(langs[t]);
 }
