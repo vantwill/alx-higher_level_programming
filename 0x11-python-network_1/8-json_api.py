@@ -1,19 +1,25 @@
 #!/usr/bin/python3
-'''
-take in letter and send a POST request
-'''
+"""Check status"""
 import requests
-from sys import argv
-if __name__ == "__main__":
-    json = {'q': ""}
-    if len(argv) > 1:
-        json['q'] = argv[1]
-    response = requests.post("http://0.0.0.0:5000/search_user", json)
-    if "json" not in response.headers.get('content-type'):
-        print("Not a valid JSON")
+import sys
+
+
+def searchapi():
+    """status"""
+    if len(sys.argv) == 1:
+        q = ""
     else:
-        if response.json():
-            print("[{}] {}".format(response.json().get('id'),
-                  response.json().get('name')))
+        q = sys.argv[1]
+    res = requests.post("http://0.0.0.0:5000/search_user", data={"q": q})
+    
+    try:
+        data = res.json()
+        if data:
+            print("[{}] {}".format(data["id"], data["name"]))
         else:
             print("No result")
+    except:
+        print("Not a valid JSON")
+
+if __name__ == "__main__":
+    searchapi()
