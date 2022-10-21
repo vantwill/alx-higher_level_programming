@@ -1,8 +1,9 @@
 #!/usr/bin/python3
-# takes in a URL, sends a request to the URL and displays the value of the X-Request-Id variable
-import urllib.request
-import sys
-
-if __name__ == "__main__":
-    with urllib.request.urlopen(sys.argv[1]) as response:
-        print(response.getheader('X-Request-Id'))
+'''
+displays the value of the X-Request-Id variable
+'''
+if __name__ == '__main__':
+    import sys
+    import urllib.request
+    with urllib.request.urlopen(sys.argv[1]) as rens:
+        print(rens.info()['X-Request-Id'])
