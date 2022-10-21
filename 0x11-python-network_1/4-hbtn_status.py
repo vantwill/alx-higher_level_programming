@@ -1,10 +1,11 @@
 #!/usr/bin/python3
-# requests use
-import requests
+"""
+requests model
+"""
 
-
-if __name__ == "__main__":
-    r = requests.get('https://alx-intranet.hbtn.io/status')
+if __name__ == '__main__':
+    import requests
+    rslt = requests.get('https://alx-intranet.hbtn.io/status')
     print("Body response:")
-    print("\t- type: {}".format(type(r.text)))
-    print("\t- content: {}".format(r.text))
+    print("\t- type: {}".format(rslt.text.__class__))
+    print("\t- content: {}".format(rslt.text))
