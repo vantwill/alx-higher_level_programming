@@ -10,10 +10,10 @@ def searchapi():
         q = ""
     else:
         q = sys.argv[1]
-    res = requests.post("http://0.0.0.0:5000/search_user", data={"q": q})
-    
+    result = requests.post("http://0.0.0.0:5000/search_user", data={"q": q})
+
     try:
-        data = res.json()
+        data = result.json()
         if data:
             print("[{}] {}".format(data["id"], data["name"]))
         else:
